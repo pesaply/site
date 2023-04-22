@@ -1,0 +1,195 @@
+:root {
+    --primary: #ecd087;
+    --secondary: #5F656F;
+    --light: #F5F5F5;
+    --dark: #02245B;
+}
+
+.colors{
+  --primary:#02245B;
+  --light: #F5F5F5;
+  --secondary:#cb8d16;
+  --min-primary:#44a8eb;
+  --btn-primary:#418171;
+}
+
+/* catamaran-regular - latin */
+@font-face {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/catamaran-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/catamaran-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/catamaran-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/catamaran-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/catamaran-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/catamaran-v17-latin-regular.svg#Catamaran') format('svg'); /* Legacy iOS */
+}
+  /* catamaran-600 - latin */
+@font-face {
+    font-family: 'CatamaranSemiBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/catamaran-v17-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/catamaran-v17-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/catamaran-v17-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/catamaran-v17-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/catamaran-v17-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/catamaran-v17-latin-600.svg#Catamaran') format('svg'); /* Legacy iOS */
+}
+
+/* catamaran-700 - latin */
+@font-face {
+    font-family: 'CatamaranBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/catamaran-v17-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/catamaran-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/catamaran-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/catamaran-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/catamaran-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/catamaran-v17-latin-700.svg#Catamaran') format('svg'); /* Legacy iOS */
+  }
+
+body{
+    font-family: "Catamaran";
+}
+
+h1,
+h2,
+.h1,
+.h2,
+.fw-bold {
+    font-family: "CatamaranBold";
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.h3,
+.h4,
+.fw-medium {
+    font-family: "CatamaranSemiBold";
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.h5,
+.h6,
+.fw-normal {
+    font-family: "Catamaran";
+    font-weight: 400 !important;
+}
+/*--------------------------------------------------------------
+# General Section Titles 
+--------------------------------------------------------------*/
+section {
+  padding: 0px 0;
+}
+
+.section-bg {
+  background-color: #f6f9fd;
+}
+
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h3 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  /* margin: 0 0 5px 0; */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.section-title h3::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #cb8d16;
+  /* margin: 4px 10px; */
+}
+
+.section-title p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+/*** Popular store cards ***/
+.store-card{
+  border-radius: 14px;
+  height: 120px;
+  align-items:center;
+  overflow: hidden;
+}
+
+.store-logo-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 5px;
+}
+
+.store-paragraph{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; 
+}
+
+.store-card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cb8d16;
+  background-color: white;
+}
+
+/*** Footer ***/
+.footer {
+  color: #B0B9AE;
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #B0B9AE;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  color: var(--light);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.copyright {
+  color: #B0B9AE;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
